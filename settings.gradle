@@ -1,0 +1,2 @@
+include ':app'
+rootProject.name = "6 pack in 30 days"

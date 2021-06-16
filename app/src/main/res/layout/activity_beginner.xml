@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/begback"
+    tools:context=".Beginner">
+
+
+    <Button
+        android:id="@+id/reset"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:layout_marginVertical="5dp"
+        android:layout_marginLeft="25dp"
+        android:background="@drawable/resetfinal"
+        app:layout_constraintLeft_toRightOf="@+id/retur"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/retur"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:layout_marginVertical="5dp"
+        android:layout_marginStart="-23dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginRight="72dp"
+        android:background="@drawable/mainpage"
+        android:onClick="back"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/beg"
+        android:layout_width="433dp"
+        android:layout_height="173dp"
+        android:layout_marginTop="48dp"
+
+        app:layout_constraintHorizontal_bias="0.473"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/beginner"></ImageView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/beg"
+        android:scaleY="45">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Day 1"
+            android:textSize="40dp"
+            android:layout_marginVertical="35dp" />
+
+
+
+    </ScrollView>
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
